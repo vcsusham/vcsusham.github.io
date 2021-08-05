@@ -1,0 +1,46 @@
+@import "../../commonstyles/variables.scss";
+.productDetail {
+  padding-top: 20px;
+  h1 {
+    padding: 15px;
+    color: $Black;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0px;
+    text-align: left;
+  }
+  .homeCategories {
+    padding-bottom: 12px;
+    width: 92%;
+    background-color: transparent;
+    white-space: unset;
+    display: flex;
+    overflow-x: scroll;
+    backface-visibility: hidden;
+    margin: 0px auto 10px;
+    .categoriesDescription {
+      display: inline-grid;
+      width: 100%;
+      align-items: flex-end;
+      padding: 0 4px;
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 65px;
+        background-color: rgba(0, 0, 0, 0.22);
+        width: 120px;
+        cursor: pointer;
+        background-size: cover;
+        background-position: center center;
+        border-radius: 4px;
+        backface-visibility: hidden;
+      }
+      p {
+        position: relative;
+        color: white;
+      }
+    }
+  }
+}

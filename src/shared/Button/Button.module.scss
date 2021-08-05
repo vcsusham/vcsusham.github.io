@@ -1,0 +1,53 @@
+@import "../../commonstyles/variables.scss";
+.btn {
+  border-width: 0;
+  border-radius: 2px;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 500px;
+  &:active {
+    @extend .is-primary;
+  }
+}
+
+.is-primary {
+  background: $Green;
+  color: $White;
+}
+
+.is-secondary {
+  background: $Green;
+  color: $Green;
+  border: 1px solid $Green;
+}
+
+.is-medium {
+  @include fontStyle(12px, false, 500);
+  padding: 12px;
+}
+
+.is-large {
+  @include fontStyle(14px, false, 500);
+  padding: 15px 20px;
+}
+
+.is-small {
+  font-size: 11px;
+  padding: 6px 10px;
+}
+
+.is-active {
+  background: $Green;
+  color: $White;
+}
+
+.btn[disabled],
+.is-disabled {
+  background: $Grey;
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.5;
+}

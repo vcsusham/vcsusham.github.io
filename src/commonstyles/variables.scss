@@ -1,0 +1,21 @@
+$Green: #4fcf64;
+$Grey: #b0b0b0;
+$White: #ffffff;
+$borderCol: #ebebeb;
+$Black: #000000;
+$LGrey: #757575;
+$BGrey: #f0f0f0;
+
+@mixin fontStyle($size: false, $color: false, $weight: false) {
+  @if $size {
+    font-size: $size;
+  }
+
+  @if $color {
+    color: $color;
+  }
+
+  @if $weight {
+    font-weight: $weight;
+  }
+}
